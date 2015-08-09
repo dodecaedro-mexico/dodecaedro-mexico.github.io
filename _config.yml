@@ -1,0 +1,13 @@
+# Site settings
+title: Dodecaedro.mx
+description: > # this means to ignore newlines until "baseurl:"
+  En dodecaedro encontrarás arículos sobre la cultura del cine, literatura, artes plásticas, y música local mexicana.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://dodecaedro.mx" # the base hostname & protocol for your site
+permalink: pretty
+
+# Build settings
+markdown: kramdown
+
+gems:
+  - jekyll-sitemap

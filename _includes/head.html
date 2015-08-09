@@ -1,0 +1,17 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <!-- SEO Meta Tags -->
+{% include seo.html %}
+  <!-- Facebook Meta Tags -->
+{% include facebook-meta.html %}
+  <!-- Twitter Meta Tags -->
+{% include twitter-meta.html %}
+  <!-- Internal dependencies -->
+  <link rel="shortcut icon" href="{{ "/assets/img/favicon.ico" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/app.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <script src="{{ "/assets/js/modernizr.js" | prepend: site.baseurl }}"></script>
+</head>
