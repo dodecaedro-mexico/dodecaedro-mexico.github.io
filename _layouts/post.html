@@ -9,7 +9,7 @@ layout: default
       {{ content }}
       <hr>
       <p>
-        <em>Por: {{ page.author }}</em>
+        <em>By: {{ page.author }}</em>
         {% include social-buttons.html %}
       </p>
     </article>
@@ -17,7 +17,7 @@ layout: default
 
 
     <div class="show-for-small-only small-12 columns">
-        Más en Dodecaedro
+        Related Posts
         <ul>
           {% for post in site.related_posts limit:3 %}
           <li>        
@@ -32,11 +32,11 @@ layout: default
         <br><br>
         <img src="/assets/img/artistas/{{ page.author }}.jpg" alt="{{ page.author }}">
         <p>
-          <strong>Autor </strong>| {{ page.author }}
+          <strong>Author </strong>| {{ page.author }}
         </p>
         <hr>
       </p>
-      <h4>Más en Dodecaedro</h4>
+      <h4>Realated Posts</h4>
       <hr>
       <p>
         {% for post in site.related_posts limit:3 %}

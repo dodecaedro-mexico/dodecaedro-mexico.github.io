@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-    <h2>De todo</h2>
+    <h2>Latest</h2>
     <hr>
 
     <ul class="small-block-grid-1 medium-block-grid-4">
@@ -22,7 +22,7 @@ layout: page
                 <p>
                    {{ post.excerpt | truncate:140 }}
                 </p>
-                <a href="{{ post.url }}">Leer más ></a>
+                <a class="right button tiny radius" href="{{ post.url }}">More</a>
             </li>
     
         {% endfor %}
@@ -30,13 +30,13 @@ layout: page
     </ul>
 
     <br>
-    <div id="cine"></div>
-    <h2>Cine</h2>
+    <div id="music"></div>
+    <h2>Music</h2>
     <hr>
 
     <ul class="small-block-grid-1 medium-block-grid-4">
     
-        {% for post in site.categories.cine limit:5 %}
+        {% for post in site.categories.music limit:5 %}
     
             <li>
                 <a href="{{ post.url }}"> 
@@ -52,7 +52,7 @@ layout: page
                 <p>
                    {{ post.excerpt | truncate:140 }}
                 </p>
-                <a href="{{ post.url }}">Leer más ></a>
+                <a class="right button tiny radius" href="{{ post.url }}">More</a>
             </li>
     
         {% endfor %}
@@ -60,13 +60,13 @@ layout: page
     </ul>
     
     <br>
-    <div id="musica"></div>
-    <h2>Música</h2>
+    <div id="photography"></div>
+    <h2>Photography</h2>
     <hr>
 
     <ul class="small-block-grid-1 medium-block-grid-4">
     
-        {% for post in site.categories.musica limit:5 %}
+        {% for post in site.categories.photography limit:5 %}
     
             <li>
                 <a href="{{ post.url }}"> 
@@ -82,102 +82,9 @@ layout: page
                 <p>
                    {{ post.excerpt | truncate:140 }}
                 </p>
-                <a href="{{ post.url }}">Leer más ></a>
+                <a class="button-tiny" href="{{ post.url }}">More</a>
             </li>
     
         {% endfor %}
 
     </ul>
-    <!--    
-    <br>
-    <div id="fotografia"></div>
-    <h2>Foto</h2>
-    <hr>
-
-    <ul class="small-block-grid-1 medium-block-grid-4">
-    
-        {% for post in site.categories.foto limit:5 %}
-    
-            <li>
-                <a href="{{ post.url }}"> 
-                    {% if post.thumbnail %}
-                        <img alt="{{ post.title }}" src="{{ post.thumbnail }}" align="center" />
-                    {% else %}
-                        <img src="/assets/img/dummy.jpg" align="center" />
-                    {% endif %}
-                </a>
-            </li>
-            <li>
-                <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
-                <p>
-                   {{ post.excerpt | truncate:140 }}
-                </p>
-                <a href="{{ post.url }}">Leer más ></a>
-            </li>
-    
-        {% endfor %}
-
-    </ul>
-    --> 
-    <br>
-    <div id="graphique"></div>
-    <h2>Graphique</h2>
-    <hr>
-
-    <ul class="small-block-grid-1 medium-block-grid-4">
-    
-        {% for post in site.categories.graphique limit:5 %}
-    
-            <li>
-                <a href="{{ post.url }}"> 
-                    {% if post.thumbnail %}
-                        <img alt="{{ post.title }}" src="{{ post.thumbnail }}" align="center" />
-                    {% else %}
-                        <img src="/assets/img/dummy.jpg" align="center" />
-                    {% endif %}
-                </a>
-            </li>
-            <li>
-                <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
-                <p>
-                   {{ post.excerpt | truncate:140 }}
-                </p>
-                <a href="{{ post.url }}">Leer más ></a>
-            </li>
-    
-        {% endfor %}
-
-    </ul>
-    
-    <br>
-    <div id="letras"></div>
-    <h2>Letras</h2>
-    <hr>
-
-    <ul class="small-block-grid-1 medium-block-grid-4">
-    
-        {% for post in site.categories.letras limit:5 %}
-    
-            <li>
-                <a href="{{ post.url }}"> 
-                    {% if post.thumbnail %}
-                        <img alt="{{ post.title }}" src="{{ post.thumbnail }}" align="center" />
-                    {% else %}
-                        <img src="/assets/img/dummy.jpg" align="center" />
-                    {% endif %}
-                </a>
-            </li>
-            <li>
-                <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
-                <p>
-                   {{ post.excerpt | truncate:140 }}
-                </p>
-                <a href="{{ post.url }}">Leer más ></a>
-            </li>
-    
-        {% endfor %}
-
-    </ul>
-    <br><br>
-    <h4><a style="float:right;" href="/archive">Ver más >&nbsp&nbsp</a></h4>
-    <hr>

@@ -1,0 +1,20 @@
+# Site navigation links
+
+# Categories
+
+- title: Music
+  url: "/#music"
+
+- title: Photography
+  url: "/#photography"
+
+# Static pages and links
+
+- title: About
+  url: http://github.com/jekyllpub
+
+- title: Setup
+  url: "/#"
+
+- title: Github
+  url: http://github.com/jekyllpub
