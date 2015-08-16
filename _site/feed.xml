@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dodecaedro.mx</title>
-    <description>En dodecaedro encontrarás arículos sobre la cultura del cine, literatura, artes plásticas, y música local mexicana.
+    <title>JekyllPub</title>
+    <description>Jekyll Pub is a rails app (currently in construction) you can upload to heroku for writers to manage site&#39;s posts (in a RESTful way).
 </description>
-    <link>http://dodecaedro.mx/</link>
-    <atom:link href="http://dodecaedro.mx/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 16 Aug 2015 16:09:57 -0500</pubDate>
-    <lastBuildDate>Sun, 16 Aug 2015 16:09:57 -0500</lastBuildDate>
+    <link>http://jekyllpub.github.io/</link>
+    <atom:link href="http://jekyllpub.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 16 Aug 2015 16:14:29 -0500</pubDate>
+    <lastBuildDate>Sun, 16 Aug 2015 16:14:29 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -31,8 +31,8 @@
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/YWNWi-ZWL3c&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Sun, 16 Aug 2015 00:00:00 -0500</pubDate>
-        <link>http://dodecaedro.mx/music/2015/08/16/madmax/</link>
-        <guid isPermaLink="true">http://dodecaedro.mx/music/2015/08/16/madmax/</guid>
+        <link>http://jekyllpub.github.io/music/2015/08/16/madmax/</link>
+        <guid isPermaLink="true">http://jekyllpub.github.io/music/2015/08/16/madmax/</guid>
         
         
         <category>music</category>
