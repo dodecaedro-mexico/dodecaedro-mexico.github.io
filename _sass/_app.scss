@@ -1,6 +1,8 @@
 @import "foundation/normalize";
 @import "foundation/settings";
 @import "foundation";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,700&subset=latin,latin-ext);
+//@import url(https://fonts.googleapis.com/css?family=Poiret+One);
 
 footer {
     margin-top: 1rem;
@@ -28,5 +30,46 @@ article {
     .flex-video {
         margin-bottom: 20px;
         margin-top: 20px;
+    }
+}
+
+a:hover {
+    img, h4, #title {
+        opacity: 0.75;
+    }
+}
+
+#title {
+    text-align: right;
+    font-weight: lighter;
+}    
+
+@media #{$large-up} {
+    #title{
+        font-size: rem-calc(70);
+        margin: rem-calc(40);
+        margin-right: rem-calc(100);
+    }
+
+    .tab-bar .small-1 a {
+        margin: rem-calc(40);
+    }
+}
+
+@media #{$medium-only} { 
+    #title {
+        font-size: rem-calc(50);
+        margin: rem-calc(20);
+        margin-right: rem-calc(60);
+    }
+
+    .tab-bar .small-1 a {
+        margin: rem-calc(20);
+    }
+}
+
+@media #{$small-only} {  
+    #title {
+        font-size: rem-calc(25);
     }
 }

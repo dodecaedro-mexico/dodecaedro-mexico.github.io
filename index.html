@@ -1,90 +1,120 @@
 ---
 layout: page
 ---
-    <h2>Latest</h2>
-    <hr>
+    
+    {% for post in site.posts limit:1 %}    
 
-    <ul class="small-block-grid-1 medium-block-grid-4">
-    
-        {% for post in site.posts limit:10 %}
-    
-            <li>
-                <a href="{{ post.url }}"> 
-                    {% if post.thumbnail %}
-                        <img alt="{{ post.title }}" src="{{ post.thumbnail }}" align="center" />
-                    {% else %}
-                        <img src="/assets/img/dummy.jpg" align="center" />
-                    {% endif %}
-                </a>
-            </li>
-            <li>
-                <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
-                <p>
-                   {{ post.excerpt | truncate:140 }}
-                </p>
-                <a class="right button tiny radius" href="{{ post.url }}">More</a>
-            </li>
-    
-        {% endfor %}
+    <row>
 
-    </ul>
+        <div class="small-12 medium-6 columns">
+            <a href="{{ post.url }}"> 
+                {% if post.thumbnail %}
+                    <img alt="{{ post.title }}" src="{{ post.thumbnail }}" align="center" />
+                {% else %}
+                    <img src="/assets/img/dummy.jpg" align="center" />
+                {% endif %}
+            </a>
+        </div>
+        <div class="small-12 medium-6 columns">
+            <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+            <p>
+               {{ post.excerpt | truncate:200 }}
+            </p>
+        </div>
 
-    <br>
-    <div id="music"></div>
-    <h2>Music</h2>
-    <hr>
+    </row>
 
-    <ul class="small-block-grid-1 medium-block-grid-4">
-    
-        {% for post in site.categories.music limit:5 %}
-    
-            <li>
-                <a href="{{ post.url }}"> 
-                    {% if post.thumbnail %}
-                        <img alt="{{ post.title }}" src="{{ post.thumbnail }}" align="center" />
-                    {% else %}
-                        <img src="/assets/img/dummy.jpg" align="center" />
-                    {% endif %}
-                </a>
-            </li>
-            <li>
-                <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
-                <p>
-                   {{ post.excerpt | truncate:140 }}
-                </p>
-                <a class="right button tiny radius" href="{{ post.url }}">More</a>
-            </li>
-    
-        {% endfor %}
+    {% endfor %}
 
-    </ul>
-    
-    <br>
-    <div id="photography"></div>
-    <h2>Photography</h2>
-    <hr>
+    <row>
+        
+        <div class="small-12 columns">
+            <br><br><h2>Latest</h2>
+        </div>
+        <hr>
 
-    <ul class="small-block-grid-1 medium-block-grid-4">
-    
-        {% for post in site.categories.photography limit:5 %}
-    
-            <li>
-                <a href="{{ post.url }}"> 
-                    {% if post.thumbnail %}
-                        <img alt="{{ post.title }}" src="{{ post.thumbnail }}" align="center" />
-                    {% else %}
-                        <img src="/assets/img/dummy.jpg" align="center" />
-                    {% endif %}
-                </a>
-            </li>
-            <li>
-                <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
-                <p>
-                   {{ post.excerpt | truncate:140 }}
-                </p>
-                <a class="button-tiny" href="{{ post.url }}">More</a>
-            </li>
-    
-        {% endfor %}
+        <ul class="small-block-grid-1 medium-block-grid-4">
+        
+            {% for post in site.posts limit:10 %}
+        
+                <li>
+                    <a href="{{ post.url }}"> 
+                        {% if post.thumbnail %}
+                            <img alt="{{ post.title }}" src="{{ post.thumbnail }}" align="center" />
+                        {% else %}
+                            <img src="/assets/img/dummy.jpg" align="center" />
+                        {% endif %}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+                    <p>
+                       {{ post.excerpt | truncate:140 }}
+                    </p>
+                    <a class="right button tiny radius" href="{{ post.url }}">More</a>
+                </li>
+        
+            {% endfor %}
 
-    </ul>
+        </ul>
+
+        <br>
+        <div id="music"></div>
+        <h2>Music</h2>
+        <hr>
+
+        <ul class="small-block-grid-1 medium-block-grid-4">
+        
+            {% for post in site.categories.music limit:5 %}
+        
+                <li>
+                    <a href="{{ post.url }}"> 
+                        {% if post.thumbnail %}
+                            <img alt="{{ post.title }}" src="{{ post.thumbnail }}" align="center" />
+                        {% else %}
+                            <img src="/assets/img/dummy.jpg" align="center" />
+                        {% endif %}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+                    <p>
+                       {{ post.excerpt | truncate:140 }}
+                    </p>
+                    <a class="right button tiny radius" href="{{ post.url }}">More</a>
+                </li>
+        
+            {% endfor %}
+
+        </ul>
+        
+        <br>
+        <div id="photography"></div>
+        <h2>Photography</h2>
+        <hr>
+
+        <ul class="small-block-grid-1 medium-block-grid-4">
+        
+            {% for post in site.categories.photography limit:5 %}
+        
+                <li>
+                    <a href="{{ post.url }}"> 
+                        {% if post.thumbnail %}
+                            <img alt="{{ post.title }}" src="{{ post.thumbnail }}" align="center" />
+                        {% else %}
+                            <img src="/assets/img/dummy.jpg" align="center" />
+                        {% endif %}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+                    <p>
+                       {{ post.excerpt | truncate:140 }}
+                    </p>
+                    <a class="button-tiny" href="{{ post.url }}">More</a>
+                </li>
+        
+            {% endfor %}
+
+        </ul>
+    </row>

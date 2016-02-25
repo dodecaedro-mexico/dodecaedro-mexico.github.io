@@ -1,44 +1,32 @@
-<header>
+    <div class="off-canvas-wrap" data-offcanvas>
+      <main class="inner-wrap">
 
-  <div class="fixed">
+        <nav class="tab-bar">
+            <div class="row">
+                <div class="small-1 columns">
+                    <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+                </div>
+                <div class="small-10 columns">
+                    <a href="/"><h1 id="title">Dodecaedro MX</h1></a>
+                </div>
+            </div>
+        </nav>
 
-    <nav class="top-bar" data-topbar role="navigation">
-        
-        <ul class="title-area">
-            <li class="name">
-                <h1><a href="/">JekyllPub</a></h1>
-            </li>
-            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-        </ul>
-        
-                
-        <section class="top-bar-section show-for-medium-up">
-            <ul class="right">
+        <!-- Off Canvas Menu -->
+        <aside class="left-off-canvas-menu">
+            <header>
+              <ul class="off-canvas-list">
+                <li><label>Dodecaedro</label></li>
+                <li><a href="#">Cine</a></li>
+                <li><a href="#">Música</a></li>
+                <li><a href="#">Arte</a></li>
+                <li><a href="#">Letras</a></li>
+                <li><label>Sobre Nosotros</label></li>
+                <li><a href="#">Quiénes Somos</a></li>
+                <li><a href="#">Artistas</a></li>
                 <li>
                     <a href="http://facebook.com/" target="_blank"><img src="{{ "/assets/img/SVG/facebook-20-x-20.svg" | prepend: site.baseurl }}"/>&nbsp;&nbsp;</a>
                 </li>
-            </ul>
-        </section>
-        
-        <section class="top-bar-section">
-
-            <ul class="right">
-
-                {% for link in site.data.navigation %}
-                    {% if link.url contains 'http' %}
-                        {% assign domain = '' %}
-                        {% else %}
-                        {% assign domain = site.url %}
-                    {% endif %}
-                    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
-                {% endfor %}
-
-            </ul>
-                
-        </section>
-        
-    </nav>
-
-  </div>
-
-</header>
+              </ul>
+            </header>
+        </aside>
