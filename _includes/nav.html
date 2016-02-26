@@ -17,16 +17,20 @@
             <header>
               <ul class="off-canvas-list">
                 <li><label>Dodecaedro</label></li>
-                <li><a href="#">Cine</a></li>
-                <li><a href="#">Música</a></li>
-                <li><a href="#">Arte</a></li>
-                <li><a href="#">Letras</a></li>
+                <li><a href="{{ site.url }}{{ base.url }}/#cine">Cine</a></li>
+                <li><a href="{{ site.url }}{{ base.url }}/#musica">Música</a></li>
+                <li><a href="{{ site.url }}{{ base.url }}/#graphique">Graphique</a></li>
+                <li><a href="{{ site.url }}{{ base.url }}/#letras">Letras</a></li>
                 <li><label>Sobre Nosotros</label></li>
                 <li><a href="#">Quiénes Somos</a></li>
                 <li><a href="#">Artistas</a></li>
-                <li>
-                    <a href="http://facebook.com/" target="_blank"><img src="{{ "/assets/img/SVG/facebook-20-x-20.svg" | prepend: site.baseurl }}"/>&nbsp;&nbsp;</a>
-                </li>
+                <ul class="inline-list social">
+                    <br>
+                    <a href="#"><i class="fi-social-facebook"></i></a>
+                    <a href="#"><i class="fi-social-twitter"></i></a>
+                    <a href="#"><i class="fi-social-instagram"></i></a>
+                    <a href="#"><i class="fi-social-youtube"></i></a>
+                </ul>
               </ul>
             </header>
         </aside>

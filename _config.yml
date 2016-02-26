@@ -2,8 +2,8 @@
 title: JekyllPub
 description: > # this means to ignore newlines until "baseurl:"
    Jekyll Pub is a rails app (currently in construction) you can upload to heroku for writers to manage site's posts (in a RESTful way).
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://jekyllpub.github.io" # the base hostname & protocol for your site
+baseurl: "/dodecaedrov2" # the subpath of your site, e.g. /blog/
+url: "http://sebastian9.github.io" # the base hostname & protocol for your site
 permalink: pretty
 
 # Build settings
