@@ -6,16 +6,16 @@ layout: page
 
     <div class="row" id="banner">
         <div class="show-for-medium-up medium-6 columns">
-            <a href="{{ site.base_url }}{{ post.url }}"> 
+            <a href="{{ site.baseurl }}{{ post.url }}"> 
                 {% if post.thumbnail %}
-                    <img alt="{{ post.title }}" src="{{ site.base_url }}{{ post.thumbnail }}" align="center" />
+                    <img alt="{{ post.title }}" src="{{ site.baseurl }}{{ post.thumbnail }}" align="center" />
                 {% else %}
-                    <img src="{{ site.base_url }}/assets/img/dummy.jpg" align="center" />
+                    <img src="{{ site.baseurl }}/assets/img/dummy.jpg" align="center" />
                 {% endif %}
             </a>
         </div>
         <div class="show-for-medium-up medium-6 columns">
-            <a href="{{ site.base_url }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
+            <a href="{{ site.baseurl }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
             <p>
                {{ post.excerpt | truncate:200 }}
             </p>
@@ -38,16 +38,16 @@ layout: page
             {% for post in site.categories.cine limit:5 %}
         
                 <li>
-                    <a href="{{ site.base_url }}{{ post.url }}"> 
+                    <a href="{{ site.baseurl }}{{ post.url }}"> 
                         {% if post.thumbnail %}
-                            <img alt="{{ post.title }}" src="{{ site.base_url }}{{ post.thumbnail }}" align="center" />
+                            <img alt="{{ post.title }}" src="{{ site.baseurl }}{{ post.thumbnail }}" align="center" />
                         {% else %}
-                            <img src="{{ site.base_url }}/assets/img/dummy.jpg" align="center" />
+                            <img src="{{ site.baseurl }}/assets/img/dummy.jpg" align="center" />
                         {% endif %}
                     </a>
                 </li>
                 <li>
-                    <a href="{{ site.base_url }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
+                    <a href="{{ site.baseurl }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
                     <p>
                        {{ post.excerpt | truncate:140 }}
                     </p>
@@ -67,16 +67,16 @@ layout: page
             {% for post in site.categories.musica limit:5 %}
         
                 <li>
-                    <a href="{{ site.base_url }}{{ post.url }}"> 
+                    <a href="{{ site.baseurl }}{{ post.url }}"> 
                         {% if post.thumbnail %}
-                            <img alt="{{ post.title }}" src="{{ site.base_url }}{{ post.thumbnail }}" align="center" />
+                            <img alt="{{ post.title }}" src="{{ site.baseurl }}{{ post.thumbnail }}" align="center" />
                         {% else %}
-                            <img src="{{ site.base_url }}/assets/img/dummy.jpg" align="center" />
+                            <img src="{{ site.baseurl }}/assets/img/dummy.jpg" align="center" />
                         {% endif %}
                     </a>
                 </li>
                 <li>
-                    <a href="{{ site.base_url }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
+                    <a href="{{ site.baseurl }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
                     <p>
                        {{ post.excerpt | truncate:140 }}
                     </p>
@@ -96,16 +96,16 @@ layout: page
             {% for post in site.categories.letras limit:5 %}
         
                 <li>
-                    <a href="{{ site.base_url }}{{ post.url }}"> 
+                    <a href="{{ site.baseurl }}{{ post.url }}"> 
                         {% if post.thumbnail %}
-                            <img alt="{{ post.title }}" src="{{ site.base_url }}{{ post.thumbnail }}" align="center" />
+                            <img alt="{{ post.title }}" src="{{ site.baseurl }}{{ post.thumbnail }}" align="center" />
                         {% else %}
-                            <img src="{{ site.base_url }}/assets/img/dummy.jpg" align="center" />
+                            <img src="{{ site.baseurl }}/assets/img/dummy.jpg" align="center" />
                         {% endif %}
                     </a>
                 </li>
                 <li>
-                    <a href="{{ site.base_url }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
+                    <a href="{{ site.baseurl }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
                     <p>
                        {{ post.excerpt | truncate:140 }}
                     </p>
@@ -125,16 +125,16 @@ layout: page
             {% for post in site.categories.graphique limit:5 %}
         
                 <li>
-                    <a href="{{ site.base_url }}{{ post.url }}"> 
+                    <a href="{{ site.baseurl }}{{ post.url }}"> 
                         {% if post.thumbnail %}
-                            <img alt="{{ post.title }}" src="{{ site.base_url }}{{ post.thumbnail }}" align="center" />
+                            <img alt="{{ post.title }}" src="{{ site.baseurl }}{{ post.thumbnail }}" align="center" />
                         {% else %}
-                            <img src="{{ site.base_url }}/assets/img/dummy.jpg" align="center" />
+                            <img src="{{ site.baseurl }}/assets/img/dummy.jpg" align="center" />
                         {% endif %}
                     </a>
                 </li>
                 <li>
-                    <a href="{{ site.base_url }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
+                    <a href="{{ site.baseurl }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
                     <p>
                        {{ post.excerpt | truncate:140 }}
                     </p>
