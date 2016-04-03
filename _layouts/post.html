@@ -9,7 +9,7 @@ layout: default
       {{ content }}
       <hr>
       <p>
-        <em>By: {{ page.author }}</em>
+        <em>Por: {{ page.author }}</em>
         {% include social-buttons.html %}
       </p>
     </article>
@@ -32,11 +32,11 @@ layout: default
         <br><br>
         <img src="{{ site.baseurl }}/assets/img/artistas/{{ page.author }}.jpg" alt="{{ page.author }}">
         <p>
-          <strong>Author </strong>| {{ page.author }}
+          <strong>Autor </strong>| {{ page.author }}
         </p>
         <hr>
       </p>
-      <h4>Realated Posts</h4>
+      <h4>Posts Similares</h4>
       <hr>
       <p>
         {% for post in site.related_posts limit:3 %}
